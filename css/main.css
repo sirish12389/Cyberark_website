@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+nav{
+    background: #3273a8;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #3273a8;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+  overflow: hidden;
+}
+
+.left-text {
+  text-align: left;
+  z-index: 1;
+  opacity: 1;
+  background-color: rgba(255,255,255,0.8);
+}
+/*.tm-bg-white-translucent {
+    background-color: rgba(255,255,255,0.8);
+}*/
+
+
+.left-text h2 {
+	/*sirish: changed font size*/
+  font-size: 42px
+}
+
+.left-text p {
+	/*sirish: changed font size*/
+  font-size: 18px
+}
+
+.left-text button {
+	width: 100px;
+	height: 50px;
+	background-color: #3273a8;
+	border: none;
+	border-radius: 10px;
+}
+
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.second {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.section1 {
+	background-color: #3273a8;
+	color: #fff
+}
+
+.section3 {
+	padding: 50% 10%;
+	background-color: #3273a8;
+	color: #fff
+}
+
+
+.section2{
+	display: grid;
+}
+
+.section2 .sec2Continer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 350px;
+}
+
+.section2 .sec2Continer img {
+	width: 100%;
+	height: 350px;
+}
+
+.section2 .sec2Continer div {
+	padding: 15% 10%;
+}
+
+.third {
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+
+.right-text {
+	text-align: left;
+	justify-items: center;
+	padding-top: 30%;
+	padding-left: 10%;
+	background-color: #3273a8;
+}
+
+.fourth {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-column-gap: 30px;
+	padding: 2% 10%;
+	height: 125px;
+	color: white;
+	background-color: #102536;
+}
+
+.row {
+	display: flex;
+	gap: 700px;
+}
+/*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}*/
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
